@@ -171,31 +171,31 @@ ul {
   margin: 30px 500px 0;
 }
 
-.second-section ul {
+.second-section__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.second-section li {
+.second-section__list-item {
   display: flex;
   justify-content: space-between;
   flex-flow: column;
   gap: 10px;
 }
-.second-section h3 {
+.second-section__heading {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--almost-black);
 }
-.second-section p {
+.second-section__description {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   flex-basis: 75px;
 }
-.second-section-icon-container {
+.second-section__icon-container {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
