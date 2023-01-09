@@ -31,7 +31,7 @@
           >
           <!-- navigation -->
           <nav class="navigation">
-            <ul>
+            <ul class="navigation__list">
               <li class="navigation__list-item navigation__is-active"><a class="navigation__link" href="index.html"> Agencja </a></li>
               <li class="navigation__list-item"><a class="navigation__link" href="portfolio.html"> Portfolio </a></li>
               <li class="navigation__list-item"><a class="navigation__link" href="#"> Kontakt </a></li>
@@ -57,13 +57,14 @@
     </header>
 
     <main>
+
       <section class="first-section section">
         <div class="container">
-          <h1 class="primary-heading">
+          <h1 class="first-section__heading">
             efektywne rozwiązania <br />
             dla waszego biznesu
           </h1>
-          <button data-modal-open class="order-button" type="button">
+          <button data-modal-open class="main-button first-section__main-button" type="button">
             Zamów usługę
           </button>
         </div>
@@ -454,7 +455,7 @@
           <label for="email" email>Zapisz się do newslettera</label>
           <form>
            <input id="email"  type="email" name="email" placeholder="E-mail" required/>
-           <button type="submit"> Zapisz się <svg width=24> <use href="./images/icons.svg#icon-send"> </svg> </button>
+           <button class="main-button bottom-section__main-button" type="submit"> Zapisz się <svg width=24> <use href="./images/icons.svg#icon-send"> </svg> </button>
           </form>
         </div>
       </div>
@@ -462,8 +463,8 @@
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-closing-button" data-modal-close>
-          <svg class="bottom-section-icon">
+        <button type="button" class="modal__closing-button" data-modal-close>
+          <svg class="modal__closing-button-icon">
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
@@ -498,7 +499,7 @@
 
             <label class="modal__checkbox-label" for="consent">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></label>
           </div>
-          <button class="modal__button" type="submit">Wyślij</button>
+          <button class="main-button modal__main-button" type="submit">Wyślij</button>
         </form>
        
       </div>

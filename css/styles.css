@@ -41,6 +41,19 @@ ul {
 .bottom-style > div {
   padding: 0 15px 0;
 }
+.main-button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
 .top-section {
   background-color: var(--white);
   border-bottom: 1px solid #ececec;
@@ -64,7 +77,7 @@ ul {
   align-items: center;
   gap: 50px;
 }
-.navigation ul {
+.navigation__list {
   display: flex;
   justify-content: space-between;
   width: 254px;
@@ -104,16 +117,13 @@ ul {
   color: var(--blue);
 }
 .logo__color,
-.navigation a:hover,
-.navigation a:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .contacts__item:hover,
-.contacts__item:focus,
-.bottom-style a[href^="mailto"]:hover,
-.bottom-style a[href^="mailto"]:focus,
-.bottom-style a[href^="tel"]:hover,
-.bottom-style a[href^="tel"]:focus {
+.contacts__item:focus {
   color: var(--blue);
 }
+
 .navigation__link:focus,
 .contacts__item:focus {
   outline: none;
@@ -135,7 +145,7 @@ ul {
 .contacts__icon {
   fill: currentColor;
 }
-.primary-heading {
+.first-section__heading {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -155,21 +165,10 @@ ul {
   margin: 0 auto;
   padding: 200px 0;
 }
-.order-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+.first-section__main-button {
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white);
-  background-color: var(--blue);
-  cursor: pointer;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
   margin: 30px 500px 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
 }
 
 .second-section ul {
@@ -400,6 +399,12 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.bottom-style a[href^="mailto"]:hover,
+.bottom-style a[href^="mailto"]:focus,
+.bottom-style a[href^="tel"]:hover,
+.bottom-style a[href^="tel"]:focus {
+  color: var(--blue);
+}
 .bottom-section-social {
   margin-left: 70px;
 }
@@ -463,21 +468,11 @@ ul {
   outline: none;
   border-color: var(--blue);
 }
-.newsletter button {
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  background-color: var(--blue);
+.bottom-section__main-button {
   padding: 0 0 0 42px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 24px;
-  color: white;
-  border: none;
 }
 .newsletter svg {
   width: 24px;
@@ -622,7 +617,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-closing-button {
+.modal__closing-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -638,7 +633,15 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-closing-button:hover {
+.modal__closing-button-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__closing-button:hover {
   cursor: pointer;
   background-color: lightgrey;
 }
@@ -753,18 +756,7 @@ ul {
 .modal__checkbox-label a {
   color: var(--blue);
 }
-.modal__button {
-  width: 200px;
-  height: 50px;
+.modal__main-button {
   margin: auto;
-  border: none;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--white);
-  cursor: pointer;
 }
