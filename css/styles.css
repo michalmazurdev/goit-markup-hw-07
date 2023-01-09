@@ -41,7 +41,7 @@ a {
 .fourth-section > div,
 .fifth-section > div,
 .portfolio-section > div,
-.bottom-style > div {
+.bottom-section > div {
   padding: 0 15px 0;
 }
 .main-button {
@@ -330,7 +330,7 @@ a {
   justify-content: space-between;
   gap: 30px;
 }
-.fifth-section-icon-container {
+.fifth-section__icon-container {
   width: 170px;
   height: 92px;
   border: 1px solid var(--delicate-gray);
@@ -340,37 +340,34 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.fifth-section a:hover .fifth-section-icon-container,
-.fifth-section a:focus .fifth-section-icon-container {
+.fifth-section__link:hover .fifth-section__icon-container,
+.fifth-section__link:focus .fifth-section__icon-container {
   color: var(--blue);
   border: 1px solid var(--blue);
 }
-.fifth-setion-icon {
+.fifth-section__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-.fifth-secton a {
-  cursor: pointer;
-}
-.bottom-style {
+.bottom-section {
   background-color: var(--dark-background);
   padding: 60px 0 60px 15px;
 }
-.bottom-style .container {
+.bottom-section__container {
   display: flex;
   justify-content: flex-start;
 }
 .logo--bottom {
   color: var(--white);
 }
-.bottom-style address {
+.bottom-section__contacts-container {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.bottom-style a[title="Lokalizacja"] {
+.bottom-section__address-link {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -378,13 +375,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--white);
 }
-.bottom-style a[href^="mailto"]:focus,
-.bottom-style a[href^="tel"]:focus,
-.bottom-section-social-media a:focus {
+.bottom-section__contact-link:focus,
+.bottom-section__social-media-link:focus {
   outline: none;
 }
-.bottom-style a[href^="mailto"],
-.bottom-style a[href^="tel"] {
+.bottom-section__contact-link,
+.bottom-section__contact-link {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -393,18 +389,15 @@ a {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bottom-style a[href^="mailto"]:hover,
-.bottom-style a[href^="mailto"]:focus,
-.bottom-style a[href^="tel"]:hover,
-.bottom-style a[href^="tel"]:focus {
+.bottom-section__contact-link:hover,
+.bottom-section__contact-link:focus {
   color: var(--blue);
 }
-.bottom-section-social {
+.bottom-section__social-container {
   margin-left: 70px;
+  padding-top: 12px;
 }
-.bottom-section-social p {
-  margin-top: 12px;
-  margin-bottom: 20px;
+.bottom-section__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -412,12 +405,14 @@ a {
   text-transform: uppercase;
   color: var(--white);
 }
-.bottom-section-social-media {
+
+.bottom-section__social-media-list {
+  margin-top: 20px;
   display: flex;
   gap: 10px;
   width: 206px;
 }
-.bottom-section-icon {
+.bottom-section__social-media-icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -425,29 +420,22 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bottom-section-social-media a:hover .bottom-section-icon,
-.bottom-section-social-media a:focus .bottom-section-icon {
+.bottom-section__social-media-link:hover .bottom-section__social-media-icon,
+.bottom-section__social-media-link:focus .bottom-section__social-media-icon {
   background-color: var(--blue);
 }
 
-.newsletter {
+.bottom-section__newsletter {
   margin-left: 78px;
   padding-top: 12px;
 }
-.newsletter label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.42;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.newsletter > form {
+
+.bottom-section__newsletter-form {
   margin-top: 20px;
   display: flex;
   gap: 12px;
 }
-.newsletter input {
+.bottom-section__newsletter-input {
   padding: 0;
   width: 358px;
   height: 50px;
@@ -457,8 +445,8 @@ a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.newsletter input:focus,
-.newsletter input:hover {
+.bottom-section__newsletter input:focus,
+.bottom-section__newsletter input:hover {
   outline: none;
   border-color: var(--blue);
 }
@@ -468,7 +456,7 @@ a {
   align-items: center;
   gap: 24px;
 }
-.newsletter svg {
+.bottom-section__button-icon {
   width: 24px;
   height: 24px;
 }
