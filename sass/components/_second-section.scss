@@ -1,8 +1,11 @@
-.second-section__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+.second-section {
+  background-color: $white;
 
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
   &__list-item {
     display: flex;
     justify-content: space-between;
