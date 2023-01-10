@@ -415,7 +415,7 @@ a {
 }
 .fifth-section__link:hover .fifth-section__icon-container, .fifth-section__link:focus .fifth-section__icon-container {
   color: #2196f3;
-  border: 1px solid #2196f3;
+  border: 0.5px solid #2196f3;
   outline: none;
 }
 .fifth-section__icon {
