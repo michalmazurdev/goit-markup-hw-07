@@ -113,7 +113,7 @@ a {
 .contacts__item:focus {
   outline: none;
 }
-/* logo */
+/* _logo */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -369,7 +369,7 @@ a {
   fill: currentColor;
 }
 
-/* bottom section */
+/* bottom-section */
 .bottom-section {
   background-color: var(--dark-background);
   padding: 60px 0 60px 15px;
