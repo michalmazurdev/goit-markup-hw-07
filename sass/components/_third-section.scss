@@ -1,0 +1,43 @@
+.third-section {
+  margin-top: -94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__list-item {
+    flex-basis: 294px;
+    display: flex;
+  }
+  &__image-container {
+    height: 294px;
+    width: 370px;
+    position: relative;
+  }
+  &__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__image-description-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+  }
+  &__image-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+}

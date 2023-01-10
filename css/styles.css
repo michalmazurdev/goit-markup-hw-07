@@ -233,11 +233,11 @@ a {
 .third-section {
   margin-top: -94px;
 }
-.thrid-section__list {
+.third-section__list {
   display: flex;
   gap: 30px;
 }
-.thrid-section__list-item {
+.third-section__list-item {
   flex-basis: 294px;
   display: flex;
 }
