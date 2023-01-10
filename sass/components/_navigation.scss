@@ -27,7 +27,7 @@
     bottom: -32px;
     border-radius: 2px;
   }
-  &__is-active {
+  &__is-active &__link {
     color: $brand-color;
   }
   &__link:hover {

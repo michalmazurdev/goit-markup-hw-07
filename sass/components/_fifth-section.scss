@@ -20,6 +20,7 @@
   &__link:focus &__icon-container {
     color: $brand-color;
     border: 1px solid $brand-color;
+    outline: none;
   }
   &__icon {
     width: 106px;
