@@ -4,21 +4,24 @@
   &__list {
     display: flex;
     gap: 30px;
+
+    &-item {
+      flex-basis: 294px;
+      display: flex;
+    }
   }
-  &__list-item {
-    flex-basis: 294px;
-    display: flex;
-  }
-  &__image-container {
-    height: 294px;
-    width: 370px;
-    position: relative;
-  }
+
   &__image {
     display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    &-container {
+      height: 294px;
+      width: 370px;
+      position: relative;
+    }
   }
   &__image-description-container {
     position: absolute;
