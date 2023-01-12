@@ -40,10 +40,11 @@
     &-item:hover .portfolio-section__overlay-message-container {
       transform: translateY(0);
     }
-  }
-  &__tiles-list-item {
-    width: calc((100% - 60px) / 3);
-    cursor: pointer;
+
+    &-list-item {
+      width: calc((100% - 60px) / 3);
+      cursor: pointer;
+    }
   }
   &__image-container {
     width: 370px;
