@@ -422,6 +422,9 @@ a {
   color: #2196f3;
   border: 0.5px solid #2196f3;
 }
+.fifth-section__link:focus {
+  outline: none;
+}
 
 .bottom-section {
   background-color: #2f303a;

@@ -27,4 +27,7 @@
     color: $brand-color;
     border: 0.5px solid $brand-color;
   }
+  &__link:focus {
+    outline: none;
+  }
 }
