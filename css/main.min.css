@@ -487,6 +487,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  vertical-align: baseline;
 }
 .bottom-section__social-media-list {
   margin-top: 20px;
