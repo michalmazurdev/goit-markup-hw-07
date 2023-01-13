@@ -596,7 +596,7 @@ a {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.portfolio-section__tiles-list-list-item {
+.portfolio-section__tiles-list-item {
   width: calc((100% - 60px) / 3);
   cursor: pointer;
 }
